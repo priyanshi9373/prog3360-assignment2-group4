@@ -28,7 +28,6 @@ jobs:
       - name: Build order-service
         run: mvn -B clean package -DskipTests -f order-service/pom.xml
 
-      # Uploading reports even if empty (requirement satisfied)
       - name: Upload test reports
         uses: actions/upload-artifact@v4
         with:
